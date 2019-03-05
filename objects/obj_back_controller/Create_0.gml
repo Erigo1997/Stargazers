@@ -1,0 +1,1 @@
+timeSinceLastStar = 0;
