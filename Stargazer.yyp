@@ -2,7 +2,7 @@
     "id": "120a292a-5856-40f4-8a23-e0e651ebbb61",
     "modelName": "GMProject",
     "mvc": "1.0",
-    "IsDnDProject": true,
+    "IsDnDProject": false,
     "configs": [
         
     ],
@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "150e0443-bca8-4878-9793-03a408b4f86f",
+            "Value": {
+                "id": "baf646dc-04f7-4eed-b1a8-3decc858d50f",
+                "resourcePath": "views\\150e0443-bca8-4878-9793-03a408b4f86f.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "195f5911-0443-443a-bddc-45d0640a0480",
             "Value": {
                 "id": "8784a3e7-5913-47b1-b53e-d8b679dd3fcc",
@@ -59,6 +67,14 @@
             "Value": {
                 "id": "40935818-ffb4-46a2-929a-aa87310db39c",
                 "resourcePath": "objects\\obj_back_largestar\\obj_back_largestar.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "1eddfd08-edf1-42f8-bec6-d60a7633db22",
+            "Value": {
+                "id": "4e0600f9-5878-4a87-84b8-8f2ca1022d64",
+                "resourcePath": "objects\\obj_wpn_mgun_controller\\obj_wpn_mgun_controller.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -191,6 +207,14 @@
             }
         },
         {
+            "Key": "a05e50e2-ea74-45fe-8663-1e832d8ba911",
+            "Value": {
+                "id": "7215a875-306a-4541-82b6-08376bade650",
+                "resourcePath": "objects\\obj_wpn_mgun_right\\obj_wpn_mgun_right.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a128950b-5063-4876-b4a6-b99dbd2ea6d1",
             "Value": {
                 "id": "ceb42c20-1d34-494e-9357-98be044fd633",
@@ -235,6 +259,14 @@
             "Value": {
                 "id": "aea438d4-2ac5-4b87-8452-0607a8877f8e",
                 "resourcePath": "views\\b6959a99-900d-4135-b5f1-ca216793ac4d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "bb1ce48c-ef35-4cb9-b037-7539b598f087",
+            "Value": {
+                "id": "14e3c94b-c044-4093-a188-f15bfeb9f8b7",
+                "resourcePath": "views\\bb1ce48c-ef35-4cb9-b037-7539b598f087.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -295,6 +327,14 @@
             }
         },
         {
+            "Key": "d32eb452-4c9d-429c-a494-b5eb863d198b",
+            "Value": {
+                "id": "9f79ded7-14c1-45a8-b324-c724eaf6be73",
+                "resourcePath": "objects\\obj_sfx_muzzleflash\\obj_sfx_muzzleflash.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d838ee32-64be-4560-8ba4-ffcbfbc65f37",
             "Value": {
                 "id": "a20a169e-0b42-4f3d-bb25-e395f67ca994",
@@ -308,6 +348,14 @@
                 "id": "b010dc0c-95c3-4e24-b995-bc541dbd376c",
                 "resourcePath": "options\\android\\options_android.yy",
                 "resourceType": "GMAndroidOptions"
+            }
+        },
+        {
+            "Key": "e90961cd-2835-489d-b2b4-fae7909e448d",
+            "Value": {
+                "id": "892284d3-49a3-47e8-b394-9ab2189d6856",
+                "resourcePath": "views\\e90961cd-2835-489d-b2b4-fae7909e448d.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -340,6 +388,14 @@
                 "id": "2efa08fa-0acb-48ce-98d6-bd85e5766448",
                 "resourcePath": "sprites\\spr_mgun_left\\spr_mgun_left.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f9d4839a-c288-4743-bd08-2498181f8cfd",
+            "Value": {
+                "id": "a9b1eaa0-3843-4516-a61d-0f34d8b5887b",
+                "resourcePath": "objects\\obj_wpn_mgun_left\\obj_wpn_mgun_left.yy",
+                "resourceType": "GMObject"
             }
         }
     ],

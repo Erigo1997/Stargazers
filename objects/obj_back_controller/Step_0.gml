@@ -2,7 +2,7 @@
 if (timeSinceLastStar > 100) {
 	var inst;
 	// Depth 10 means the stars will be in the background of the game.
-	inst = instance_create_depth(random(room_width), -5, 10, obj_back_largestar);
+	inst = instance_create_depth(random(room_width), -5, 20, obj_back_largestar);
 	with (inst) {
 		speed = 12;
 		direction = 270;
