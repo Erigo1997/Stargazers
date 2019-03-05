@@ -1,3 +1,4 @@
+/// @description Send stars down.
 // If it's time to create a new star, create one and send it down. Otherwise increase time since last star.
 if (timeSinceLastStar > 100) {
 	var inst;

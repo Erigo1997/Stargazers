@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "32547d72-7d43-4bf3-b098-ab67c465942b",
+            "Value": {
+                "id": "5a30c1ee-c7bf-4f47-b51c-9b877cab1628",
+                "resourcePath": "objects\\obj_sfx_debris\\obj_sfx_debris.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "36dcdfac-5340-40e2-96fd-2df84e7daf22",
             "Value": {
                 "id": "565c009f-9cc6-4778-96a5-3ce2dd8b0d1c",
@@ -159,6 +167,14 @@
             }
         },
         {
+            "Key": "65b1c21a-b4c9-44c0-b1a6-443e9bfa474b",
+            "Value": {
+                "id": "ffb99cf4-54f8-4b83-84de-8053a49fe7cc",
+                "resourcePath": "sprites\\spr_fx_muzzleflash\\spr_fx_muzzleflash.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "75ac291e-7061-4bcb-8e8a-3b3545332d41",
             "Value": {
                 "id": "0e0bf4da-2581-4277-a92d-834eec649949",
@@ -199,11 +215,27 @@
             }
         },
         {
+            "Key": "88f98080-3bda-4683-9668-ac5965ff47a5",
+            "Value": {
+                "id": "4ce08044-2ea8-4d62-a9e8-18e794edb5fe",
+                "resourcePath": "sprites\\spr_fx_debris1\\spr_fx_debris1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8a2c4db6-a59c-4fd3-86df-fa4c6049c751",
             "Value": {
                 "id": "2355bddf-2a97-4fff-ad0a-1aab2de32145",
                 "resourcePath": "sprites\\spr_playership\\spr_playership.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8b68bec7-4797-49e2-84fc-4f356f4dbdfb",
+            "Value": {
+                "id": "cd23d2fa-8720-4a7d-b183-ca42b5fc91fa",
+                "resourcePath": "sounds\\snd_mgun\\snd_mgun.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -327,10 +359,10 @@
             }
         },
         {
-            "Key": "d20479c6-2820-4936-ab11-f0d8ffd84fec",
+            "Key": "cfd68538-8d12-4be7-9edd-659212eda02c",
             "Value": {
-                "id": "515c5fe3-ba32-4605-ac6b-bee0b7c324f6",
-                "resourcePath": "sprites\\spr_muzzleflash\\spr_muzzleflash.yy",
+                "id": "40084edd-7377-4837-925d-62739f146cea",
+                "resourcePath": "sprites\\spr_fx_debris2\\spr_fx_debris2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -380,6 +412,14 @@
                 "id": "6e8ce2ff-5eb6-4ed6-86e3-bf7959995538",
                 "resourcePath": "views\\ecb9f58d-6851-4458-939c-187303bac444.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f33b5066-0863-48cd-b130-f36c7d547824",
+            "Value": {
+                "id": "09e5a618-234d-4d55-99a4-93de6c7c6e61",
+                "resourcePath": "sprites\\spr_fx_debris3\\spr_fx_debris3.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
