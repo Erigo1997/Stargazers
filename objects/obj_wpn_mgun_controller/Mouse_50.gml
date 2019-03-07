@@ -27,5 +27,5 @@ if (cooldown == 0) {
 	// Code that must occur regardless of side happens here.
 	audio_play_sound(snd_mgun, 10, false);
 	cooldown = 1;
-	alarm[0] = 3;
+	alarm[0] = 6 - global.playerAttackSpeed;
 }
