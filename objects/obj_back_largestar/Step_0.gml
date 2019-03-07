@@ -1,7 +1,8 @@
 // Stars moving against mouse movement creates illusion of backdrop movement.
-x = createx - mouse_x/6
+if (instance_exists(obj_playership)) {
+	x = createx - obj_playership.x/6
+}
 
-if(y > room_height)
-{
+if (y > room_height) {
 	instance_destroy();
 }
