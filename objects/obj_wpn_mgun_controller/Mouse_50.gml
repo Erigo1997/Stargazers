@@ -6,7 +6,7 @@ if (cooldown == 0) {
 		inst = instance_create_depth(obj_wpn_mgun_left.x, obj_wpn_mgun_left.y - 24, 2, obj_bullet_player);
 		with (inst) {
 			speed = 20;
-			direction = 90;
+			direction = 85 + random(10);
 		}
 		// Creates muzzleflash effect and moves the gun with recoil effect.
 		instance_create_depth(obj_wpn_mgun_left.x, obj_wpn_mgun_left.y - 24, -5, obj_sfx_muzzleflash);
@@ -17,7 +17,7 @@ if (cooldown == 0) {
 		inst = instance_create_depth(obj_wpn_mgun_right.x, obj_wpn_mgun_right.y - 24, -5, obj_bullet_player);
 		with (inst) {
 			speed = 20;
-			direction = 90;
+			direction = 85 + random(10);
 		}
 		instance_create_depth(obj_wpn_mgun_right.x, obj_wpn_mgun_right.y - 24, 2, obj_sfx_muzzleflash);
 		obj_wpn_mgun_right.recoil = 1;
