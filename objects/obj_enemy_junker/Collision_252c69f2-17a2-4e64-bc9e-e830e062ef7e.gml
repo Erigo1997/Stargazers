@@ -1,7 +1,7 @@
 /// @description Take damage.
 image_index = 1;
 alarm[0] = 1;
-hitpoints -= 5;
+hitpoints -= 3;
 
 // Create some SFX
 for (i = 0; i < 5; i += 1) {
