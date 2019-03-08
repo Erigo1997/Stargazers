@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "3e6a3753-0d02-4fa4-87ee-75e89d7c12dc",
+            "Value": {
+                "id": "d891e772-7ccf-4a2d-bee9-5fe30ab793e8",
+                "resourcePath": "objects\\obj_bullet_enemy_small\\obj_bullet_enemy_small.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "47b01f20-f8a7-4b4e-a696-3f4d6e97d048",
             "Value": {
                 "id": "67f20c78-8665-4d68-87f3-9f9e7412d723",
@@ -260,6 +268,14 @@
                 "id": "fca2d497-18a6-47e0-8e69-49671de11867",
                 "resourcePath": "options\\tvos\\options_tvos.yy",
                 "resourceType": "GMtvOSOptions"
+            }
+        },
+        {
+            "Key": "9676562a-dfa2-4ad3-bd63-df69cad7d0e1",
+            "Value": {
+                "id": "0c8c0e1d-b8b7-4531-8dba-5d5da3bdcb30",
+                "resourcePath": "sprites\\spr_bullet_enemy_small\\spr_bullet_enemy_small.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -415,6 +431,14 @@
             }
         },
         {
+            "Key": "de4b0ea4-68f5-486b-a86f-ef1b28a34fab",
+            "Value": {
+                "id": "172f112c-8ec6-43f7-807f-f7adc1757eb8",
+                "resourcePath": "sprites\\spr_enemy_plinker\\spr_enemy_plinker.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e42bf5cc-3f46-4d67-a6d0-a4885a11ac3f",
             "Value": {
                 "id": "b010dc0c-95c3-4e24-b995-bc541dbd376c",
@@ -452,6 +476,14 @@
                 "id": "0b16381c-d109-41c7-84cc-ce91ba103463",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f4bd7bdd-05d3-4f17-b116-0e2e573e4cda",
+            "Value": {
+                "id": "5a00d826-5da5-4e68-8d13-2fa78950a296",
+                "resourcePath": "objects\\obj_enemy_plinker\\obj_enemy_plinker.yy",
+                "resourceType": "GMObject"
             }
         },
         {
