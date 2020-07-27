@@ -1,4 +1,5 @@
 /// @description Initialize Player Variables
 
-hitpoints = 100;
-shield = 100;
+hitpoints = 3;
+shield = 1;
+generator = 100;

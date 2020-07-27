@@ -1,3 +1,3 @@
 /// @description Set variable
 
-createx = x;
+createy = y;
