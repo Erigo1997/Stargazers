@@ -1,4 +1,4 @@
-/// @description Send stars down.
+/// @description Send stars left
 // If it's time to create a new star, create one and send it down. Otherwise increase time since last star.
 if (timeSinceLastStar > 100) {
 	var inst;
@@ -6,7 +6,7 @@ if (timeSinceLastStar > 100) {
 	//inst = instance_create_depth(-100 + random(room_width + 300), -10, 20, obj_back_largestar);
 	inst = instance_create_depth(room_width, random(room_height), 20, obj_back_largestar);
 	with (inst) {
-		speed = 12;
+		speed = 26;
 		direction = 180;
 	}
 	timeSinceLastStar = 0;

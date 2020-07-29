@@ -2,7 +2,7 @@
 
 image_index = 1;
 alarm[0] = 1;
-obj_player_controller.hitpoints -= 1;
+obj_controller_player.hitpoints -= 1;
 
 // Create some SFX
 for (i = 0; i < 5; i += 1) {

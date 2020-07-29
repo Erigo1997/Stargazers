@@ -2,7 +2,7 @@
     "id": "d42c6fa8-d407-454e-82eb-16e6c9475405",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_player_controller",
+    "name": "obj_controller_player",
     "eventList": [
         {
             "id": "68242cf4-e513-474c-9e13-2261afd2fd21",
@@ -58,7 +58,7 @@
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
-    "persistent": false,
+    "persistent": true,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,

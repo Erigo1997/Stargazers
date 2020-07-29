@@ -1,15 +1,15 @@
 /// @description Shoot. Create bullets, control alarms and cooldowns.
 // Make sure we at all have generator to shoot.
-if (obj_player_controller.generator > 0) {
+if (obj_controller_player.generator > 0) {
 	if (cooldown == 0) {
 		var inst;
 		// Here we handle generator usage
-		obj_player_controller.generatorpause = true;
-		obj_player_controller.alarm[1] = 5;
-		if (obj_player_controller.generator < generatorCost) {
-			obj_player_controller.generator = 0;
+		obj_controller_player.generatorpause = true;
+		obj_controller_player.alarm[1] = 5;
+		if (obj_controller_player.generator < generatorCost) {
+			obj_controller_player.generator = 0;
 		} else {
-			obj_player_controller.generator -= generatorCost;
+			obj_controller_player.generator -= generatorCost;
 		}
 		// Shoot either left or right gun depending on whose turn it is.
 		if (shotside == 1) {

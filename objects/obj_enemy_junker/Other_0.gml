@@ -1,4 +1,4 @@
-/// @description Destroy self when below room.
-if (y > room_height) {
+/// @description Destroy self when left of room
+if (x < 0) {
 	instance_destroy();
 }

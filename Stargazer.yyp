@@ -74,7 +74,7 @@
             "Key": "195f5911-0443-443a-bddc-45d0640a0480",
             "Value": {
                 "id": "8784a3e7-5913-47b1-b53e-d8b679dd3fcc",
-                "resourcePath": "objects\\obj_back_controller\\obj_back_controller.yy",
+                "resourcePath": "objects\\obj_controller_background\\obj_controller_background.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -99,6 +99,14 @@
             "Value": {
                 "id": "4e0600f9-5878-4a87-84b8-8f2ca1022d64",
                 "resourcePath": "objects\\obj_wpn_mgun_controller\\obj_wpn_mgun_controller.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "2b5a5465-f2d7-470b-b89c-b613941d894c",
+            "Value": {
+                "id": "fb11fad4-ea3c-428c-b7f7-b64679af6084",
+                "resourcePath": "objects\\obj_controller_spawner\\obj_controller_spawner.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -338,7 +346,7 @@
             "Key": "b4f2cf74-1376-41ec-8599-b04734460054",
             "Value": {
                 "id": "6a8ade64-10c0-4fed-bf9f-5d8976b688ec",
-                "resourcePath": "objects\\obj_main_controller\\obj_main_controller.yy",
+                "resourcePath": "objects\\obj_controller_main\\obj_controller_main.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -356,14 +364,6 @@
                 "id": "14e3c94b-c044-4093-a188-f15bfeb9f8b7",
                 "resourcePath": "views\\bb1ce48c-ef35-4cb9-b037-7539b598f087.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "bcd8e9ff-5071-431b-86df-fc0be2983e51",
-            "Value": {
-                "id": "f47703ae-a3be-4c6f-a424-8c45044de644",
-                "resourcePath": "objects\\obj_globalvar_controller\\obj_globalvar_controller.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -442,7 +442,7 @@
             "Key": "d42c6fa8-d407-454e-82eb-16e6c9475405",
             "Value": {
                 "id": "511ab887-75e5-426d-96d9-5df71b14fce4",
-                "resourcePath": "objects\\obj_player_controller\\obj_player_controller.yy",
+                "resourcePath": "objects\\obj_controller_player\\obj_controller_player.yy",
                 "resourceType": "GMObject"
             }
         },
