@@ -1,8 +1,21 @@
 /// @description Spawns waves of enemies and calls itself.
 
-var choice = choose("echelon", "pyramid");
+var choice = choose("echelon", "pyramid", "waver");
 
 switch (choice) {
+	// One Plinker waving up and down.
+	case "waver":
+		var spawnPosition = random_range(4, room_height - 300);
+		var inst;
+		for (var i = 0; i < 1; i++) {
+			inst = instance_create_layer(room_width, spawnPosition, "Instances", obj_enemy_junker);
+			with(inst) {
+				hspeed = -obj_controller_spawner.junkerspeed;
+				waveDistance = 1;
+			}
+		}
+		alarm[0] = 20 + random(30);
+		break;
 	// Four plinkers in an echelon.
 	case "echelon":
 		var spawnPosition = random_range(4, room_height - 300);
