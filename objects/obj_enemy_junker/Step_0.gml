@@ -6,13 +6,13 @@ if (hitpoints <= 0) {
 
 if (waveDistance != 0) {
 	if (waveDown) {
-		vspeed += 1;
+		vspeed += 0.4;
 	}
 
 	if (!waveDown) {
-		vspeed -= 1;
+		vspeed -= 0.4;
 	}
-	if (vspeed < -15 || vspeed > 15) {
+	if (vspeed < -(waveDistance * 15) || vspeed > (waveDistance * 15)) {
 		waveDown = !waveDown;
 	}
 }

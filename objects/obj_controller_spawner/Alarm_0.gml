@@ -1,22 +1,21 @@
 /// @description Spawns waves of enemies and calls itself.
 
-var choice = choose("echelon", "pyramid", "waver");
+var choice = choose("plinkwaver", "echelon", "pyramid", "waver");
 
 switch (choice) {
-	// One Plinker waving up and down.
-	case "waver":
-		var spawnPosition = random_range(4, room_height - 300);
-		var inst;
-		for (var i = 0; i < 1; i++) {
-			inst = instance_create_layer(room_width, spawnPosition, "Instances", obj_enemy_junker);
-			with(inst) {
-				hspeed = -obj_controller_spawner.junkerspeed;
-				waveDistance = 1;
-			}
-		}
-		alarm[0] = 20 + random(30);
+	// Three plinkers waving
+	case "plinkwaver":
+		auxspawn = random_range(4, room_height - 650);
+		auxcount = 3;
+		alarm[2] = 1;
 		break;
-	// Four plinkers in an echelon.
+	// Four junkers waving up and down.
+	case "waver":
+		auxspawn = random_range(4, room_height - 650);
+		auxcount = 4;
+		alarm[1] = 1;
+		break;
+	// Four junkers in an echelon.
 	case "echelon":
 		var spawnPosition = random_range(4, room_height - 300);
 		var inst;
@@ -28,7 +27,7 @@ switch (choice) {
 		}
 		alarm[0] = 20 + random(30);
 		break;
-	// Four plinkers in a diamond shape.
+	// Four junkers in a diamond shape.
 	case "pyramid":
 		var spawnPosition = random_range(4, room_height - 424);
 		var inst;
@@ -36,18 +35,22 @@ switch (choice) {
 		inst = instance_create_layer(room_width + r1, spawnPosition, "Instances", obj_enemy_junker);
 		with(inst) {
 				hspeed = -obj_controller_spawner.junkerspeed;
+				waveDistance = 0.3;			
 		}
 		inst = instance_create_layer(room_width, spawnPosition + 90, "Instances", obj_enemy_junker);
 		with(inst) {
 				hspeed = -obj_controller_spawner.junkerspeed;
+				waveDistance = 0.3;	
 		}
 		inst = instance_create_layer(room_width + 120, spawnPosition + 90, "Instances", obj_enemy_junker);
 		with(inst) {
 				hspeed = -obj_controller_spawner.junkerspeed;
+				waveDistance = 0.3;	
 		}
 		inst = instance_create_layer(room_width + r1, spawnPosition + 180, "Instances", obj_enemy_junker);
 		with(inst) {
 				hspeed = -obj_controller_spawner.junkerspeed;
+				waveDistance = 0.3;	
 		}
 		alarm[0] = 20 + random(30);
 		break;

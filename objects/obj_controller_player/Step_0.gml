@@ -7,6 +7,6 @@ if (!generatorbust && generator == 0) {
 }
 
 // Recharge
-if (!generatorpause && !generatorbust && generator < 60) {
+if (!generatorpause && !generatorbust && generator < 120) {
 	generator += 2;
 }

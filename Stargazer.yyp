@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "084f2b04-24e9-48c7-b888-85311820ae27",
+            "Value": {
+                "id": "7e0a21fa-dfe9-4de9-81be-6bc60ca7f1ab",
+                "resourcePath": "sounds\\snd_plinkershot\\snd_plinkershot.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "092c3487-ce62-4c98-8646-1613e2fc46ae",
             "Value": {
                 "id": "23885d2d-d2ac-42eb-b8ff-c89b379806db",

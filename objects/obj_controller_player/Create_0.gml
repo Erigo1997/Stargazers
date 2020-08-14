@@ -2,6 +2,6 @@
 
 hitpoints = 3;
 shield = 1;
-generator = 60;
+generator = 120;
 generatorbust = false;
 generatorpause = false;
