@@ -7,4 +7,4 @@ cooldown = 0;
 shotside = 0;
 
 // Values for settings
-generatorCost = 2;
+generatorCost = 3;

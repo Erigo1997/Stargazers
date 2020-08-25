@@ -11,6 +11,9 @@ if instance_exists(obj_playership) {
 		}
 		countHeight += separate;
 	}
-	draw_sprite(spr_generatorbar, (120 - generator)/2, obj_playership.x - 32, obj_playership.y);
-	
+	if (!superOn) {
+		draw_sprite(spr_generatorbar, (120 - generator)/2, obj_playership.x - 32, obj_playership.y);
+	} else {
+		draw_sprite(spr_generatorbar, 61, obj_playership.x - 32, obj_playership.y);	
+	}
 }

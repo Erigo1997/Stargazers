@@ -3,7 +3,11 @@
 if (obj_controller_player.generator > 0) {
 	if (cooldown == 0) {
 		var inst;
+		
 		// Here we handle generator usage
+		with (obj_controller_player) {
+			event_user(0); // Traps the generator if within the timer.
+		}
 		obj_controller_player.generatorpause = true;
 		obj_controller_player.alarm[1] = 5;
 		if (obj_controller_player.generator < generatorCost) {
@@ -11,6 +15,7 @@ if (obj_controller_player.generator > 0) {
 		} else {
 			obj_controller_player.generator -= generatorCost;
 		}
+		
 		// Shoot either left or right gun depending on whose turn it is.
 		if (shotside == 1) {
 			inst = instance_create_depth(obj_wpn_mgun_left.x + 24, obj_wpn_mgun_left.y, 2, obj_bullet_player);
