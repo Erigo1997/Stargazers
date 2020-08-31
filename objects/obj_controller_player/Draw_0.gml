@@ -16,4 +16,11 @@ if instance_exists(obj_playership) {
 	} else {
 		draw_sprite(spr_generatorbar, 61, obj_playership.x - 32, obj_playership.y);	
 	}
+	
+	// Draw combo
+	if (combo > 0) {
+		draw_set_font(fnt_general);
+		draw_text(obj_playership.x + 32, obj_playership.y - 24, combo); 
+	}
 }
+

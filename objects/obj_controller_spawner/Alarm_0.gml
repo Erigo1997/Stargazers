@@ -54,5 +54,12 @@ switch (choice) {
 		}
 		alarm[0] = 20 + random(30);
 		break;
-
+	case "cruiser":
+		var spawnPosition = room_height/2 - spr_enemy_cruiser - 256;
+		var inst;
+		inst = instance_create_layer(room_width + 8, spawnPosition, "Instances", obj_enemy_cruiser);
+		with (inst) {
+			hspeed = -obj_controller_spawner.junkerspeed + 12;
+		}
+		alarm[0] = 60;
 }

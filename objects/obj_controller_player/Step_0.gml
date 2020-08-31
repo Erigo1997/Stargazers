@@ -12,10 +12,24 @@ if (!generatorbust && generator == 0) {
 
 // Recharge
 if (!generatorpause && !generatorbust && generator < maxGenerator) {
+	combo = 0;
 	generator += 2;
+	if (generator > maxGenerator) {
+		generator = maxGenerator;
+	}
 	if (generator == (maxGenerator - 2) || generator == (maxGenerator - 1)) {
 		superReady = true;
 		alarm[2] = 5;
+	}
+}
+
+// Recharges ComboBoost
+if (comboBoost) {
+	if (generator < maxGenerator) {
+	generator += 3;
+		if (generator > maxGenerator) {
+			generator = maxGenerator;
+		}
 	}
 }
 

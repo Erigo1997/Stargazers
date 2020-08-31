@@ -16,10 +16,10 @@ if (starSpeed > 0.1 && timeSinceLastStar > starFlux) {
 }
 
 if (starSpeed < starSpeedtarget) {
-	starSpeed += 0.2;
+	starSpeed += 0.5;
 }
 if (starSpeed > starSpeedtarget) {
-	starSpeed -= 0.2;
+	starSpeed -= 0.5;
 }
 if (instance_exists(obj_back_largestar)) {
 	obj_back_largestar.direction = 180;

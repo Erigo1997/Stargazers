@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Trap the gen
 if (superReady) {
 	// Create some SFX
 	for (i = 0; i < (120 - generatorRestartFrom)/5; i += 1) {

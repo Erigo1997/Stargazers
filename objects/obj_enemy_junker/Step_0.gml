@@ -1,6 +1,12 @@
 /// @description Check if dead.
 
 if (hitpoints <= 0) {
+	// Increase combo
+	with (obj_controller_player) {
+			event_user(1); // Combo function
+	}
+	
+	// Create debris
 	var inst;
 	var myspeed = self.speed;
 	var mydir = self.direction;

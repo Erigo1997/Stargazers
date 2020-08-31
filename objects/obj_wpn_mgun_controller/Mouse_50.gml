@@ -17,7 +17,7 @@ if (obj_controller_player.generator > 0) {
 		}
 		
 		// Shoot either left or right gun depending on whose turn it is.
-		if (shotside == 1) {
+		if (isLeft) {
 			inst = instance_create_depth(obj_wpn_mgun_left.x + 24, obj_wpn_mgun_left.y, 2, obj_bullet_player);
 			with (inst) {
 				speed = 35;
@@ -30,8 +30,7 @@ if (obj_controller_player.generator > 0) {
 			}
 			obj_wpn_mgun_left.recoil = 1;
 			obj_wpn_mgun_left.alarm[0] = 2;
-			shotside = 0;
-		} else if (shotside == 0) {
+		} else {
 			inst = instance_create_depth(obj_wpn_mgun_right.x + 24, obj_wpn_mgun_right.y, -5, obj_bullet_player);
 			with (inst) {
 				speed = 35;
@@ -43,7 +42,6 @@ if (obj_controller_player.generator > 0) {
 			}
 			obj_wpn_mgun_right.recoil = 1;
 			obj_wpn_mgun_right.alarm[0] = 2;
-			shotside = 1;
 		}
 		// Code that must occur regardless of side happens here.
 		audio_play_sound(snd_mgun, 10, false);

@@ -9,3 +9,5 @@ generatorpause = false;
 generatorRestartFrom = 0;
 superReady = false;
 superOn = false;
+combo = 0;
+comboBoost = false;

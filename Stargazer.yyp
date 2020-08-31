@@ -343,6 +343,14 @@
             }
         },
         {
+            "Key": "8cd8c9ba-548f-4277-97f3-51caa45d0222",
+            "Value": {
+                "id": "f6a65809-cd74-46ae-868f-8936fe0193bc",
+                "resourcePath": "sprites\\spr_enemy_cruiserturret\\spr_enemy_cruiserturret.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8e6d765a-4958-4ffb-b8dc-00c867c80f8d",
             "Value": {
                 "id": "af6ca463-9381-4ef5-9a90-f049d4cad5e0",
@@ -375,6 +383,14 @@
             }
         },
         {
+            "Key": "9fbb666a-413a-4a04-942f-d70935b0b6d2",
+            "Value": {
+                "id": "d596d478-fcd8-4709-a48e-2602a1e350a2",
+                "resourcePath": "fonts\\fnt_general\\fnt_general.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "a05e50e2-ea74-45fe-8663-1e832d8ba911",
             "Value": {
                 "id": "7215a875-306a-4541-82b6-08376bade650",
@@ -388,6 +404,14 @@
                 "id": "ceb42c20-1d34-494e-9357-98be044fd633",
                 "resourcePath": "options\\amazonfire\\options_amazonfire.yy",
                 "resourceType": "GMAmazonFireOptions"
+            }
+        },
+        {
+            "Key": "a2463e92-ca92-4a51-a4e7-1ec6ca0a9212",
+            "Value": {
+                "id": "3352b34f-a192-45e2-b666-73f73a5ac3e3",
+                "resourcePath": "objects\\obj_enemy_cruiser\\obj_enemy_cruiser.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -411,6 +435,14 @@
             "Value": {
                 "id": "47faefc2-a026-4444-adbf-b35d67cbb463",
                 "resourcePath": "objects\\obj_playershipcinematic\\obj_playershipcinematic.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ad1f472f-8581-4498-a13b-b023e33d0c6e",
+            "Value": {
+                "id": "ceb14c03-1618-4d86-aa9d-87bc375f8d00",
+                "resourcePath": "objects\\obj_enemy_cruiserturret\\obj_enemy_cruiserturret.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -451,6 +483,14 @@
             "Value": {
                 "id": "ad2cd677-ab61-42f1-8ae8-91df2ca42101",
                 "resourcePath": "sprites\\spr_mgun_right\\spr_mgun_right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c05e2a63-53e8-4251-aca9-dd890fa68207",
+            "Value": {
+                "id": "553d4b96-b248-4799-9363-d107d007e6f6",
+                "resourcePath": "sprites\\spr_enemy_cruiser\\spr_enemy_cruiser.yy",
                 "resourceType": "GMSprite"
             }
         },
