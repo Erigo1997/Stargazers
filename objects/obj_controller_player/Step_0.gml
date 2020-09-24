@@ -8,6 +8,7 @@ if (superOn) {
 if (!generatorbust && generator == 0) {
 	generatorbust = true;
 	alarm[0] = 90;
+	combo = 0;
 }
 
 // Recharge
@@ -69,9 +70,13 @@ if (hitpoints <= 0) {
 	}
 	instance_destroy(obj_playership);
 	hitpoints = 3;
+	
 	// Stop spawning.
 	if (instance_exists(obj_controller_spawner)) {
-		obj_controller_spawner.alarm[0] = -1;
-		obj_controller_background.starSpeedtarget = 0;
+		with (obj_controller_spawner) {
+			event_user(0);
+		}
 	}
+	obj_controller_background.starSpeedtarget = 0;
+	
 }

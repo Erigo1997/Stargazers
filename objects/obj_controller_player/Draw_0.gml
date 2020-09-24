@@ -18,9 +18,14 @@ if instance_exists(obj_playership) {
 	}
 	
 	// Draw combo
-	if (combo > 0) {
+	if (combo > 2) {
 		draw_set_font(fnt_general);
 		draw_text(obj_playership.x + 32, obj_playership.y - 24, combo); 
 	}
+	
+	// Draw rubies
+	draw_set_font(fnt_general);
+	draw_text(0, 0, rubies);
+	
 }
 

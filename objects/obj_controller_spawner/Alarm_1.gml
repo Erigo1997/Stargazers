@@ -9,5 +9,9 @@ if (auxcount > 0) {
 	alarm[1] = 8;
 	auxcount--;
 } else {
-	alarm[0] = 20 + random(30);
+	// Set Spawn marker.
+	inst = instance_create_layer(room_width + 64 * 4, 0, "Instances", obj_aux_spawnMarker);
+	with (inst) {
+		hspeed = -obj_controller_spawner.junkerspeed;
+	}
 }

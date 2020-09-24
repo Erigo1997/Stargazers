@@ -1,3 +1,6 @@
+if (!ready) exit; // Failsafe.
+if (!isLeft) exit;
+
 /// @description Shoot. Create bullets, control alarms and cooldowns.
 // Make sure we at all have generator to shoot.
 if (obj_controller_player.generator > 0) {
@@ -18,25 +21,25 @@ if (obj_controller_player.generator > 0) {
 		
 		// Shoot either left or right gun depending on whose turn it is.
 		if (isLeft) {
-			inst = instance_create_depth(obj_wpn_mgun_left.x + 24, obj_wpn_mgun_left.y, 2, obj_bullet_player);
+			inst = instance_create_layer(obj_wpn_mgun_left.x + 24, obj_wpn_mgun_left.y, "Bullets", obj_bullet_player);
 			with (inst) {
 				speed = 35;
 				direction = 355 + random(10);
 			}
 			// Creates muzzleflash effect and moves the gun with recoil effect.
-			inst = instance_create_depth(obj_wpn_mgun_left.x + 24, obj_wpn_mgun_left.y, -5, obj_sfx_muzzleflash);
+			inst = instance_create_layer(obj_wpn_mgun_left.x + 24, obj_wpn_mgun_left.y, "Bullets", obj_sfx_muzzleflash);
 			with (inst) {
 				image_angle = -90;
 			}
 			obj_wpn_mgun_left.recoil = 1;
 			obj_wpn_mgun_left.alarm[0] = 2;
 		} else {
-			inst = instance_create_depth(obj_wpn_mgun_right.x + 24, obj_wpn_mgun_right.y, -5, obj_bullet_player);
+			inst = instance_create_layer(obj_wpn_mgun_right.x + 24, obj_wpn_mgun_right.y, "Bullets", obj_bullet_player);
 			with (inst) {
 				speed = 35;
 				direction = 355 + random(10);
 			}
-			inst = instance_create_depth(obj_wpn_mgun_right.x + 24, obj_wpn_mgun_right.y, 2, obj_sfx_muzzleflash);
+			inst = instance_create_layer(obj_wpn_mgun_right.x + 24, obj_wpn_mgun_right.y, "Bullets", obj_sfx_muzzleflash);
 			with (inst) {
 				image_angle = -90;
 			}
@@ -44,7 +47,8 @@ if (obj_controller_player.generator > 0) {
 			obj_wpn_mgun_right.alarm[0] = 2;
 		}
 		// Code that must occur regardless of side happens here.
-		audio_play_sound(snd_mgun, 10, false);
+		obj_controller_shake_minor.shake = true;
+		audio_play_sound(snd_mgun2, 10, false);
 		cooldown = 1;
 		alarm[0] = 6 - global.playerAttackSpeed;
 	}

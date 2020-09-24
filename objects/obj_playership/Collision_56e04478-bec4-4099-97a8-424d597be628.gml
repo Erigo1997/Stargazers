@@ -1,5 +1,5 @@
 /// @description Take Damage
-
+if (obj_controller_player.invulnerable) { exit }
 image_index = 1;
 alarm[0] = 1;
 obj_controller_player.hitpoints -= 1;
@@ -14,5 +14,6 @@ for (i = 0; i < 5; i += 1) {
 		image_speed = 3;
 	}
 }
+
 
 instance_destroy(other);

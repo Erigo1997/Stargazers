@@ -191,10 +191,26 @@
             }
         },
         {
+            "Key": "3dabf516-0e8b-4b2a-af56-35aecba2a9c4",
+            "Value": {
+                "id": "d455a09a-1962-4c9a-a07d-132bad33664b",
+                "resourcePath": "sounds\\snd_mgun2\\snd_mgun2.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "3e6a3753-0d02-4fa4-87ee-75e89d7c12dc",
             "Value": {
                 "id": "d891e772-7ccf-4a2d-bee9-5fe30ab793e8",
                 "resourcePath": "objects\\obj_bullet_enemy_small\\obj_bullet_enemy_small.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "41028e77-43b5-40e5-a7a1-de1172a88932",
+            "Value": {
+                "id": "43613c5e-9663-4162-93bf-fbfc339e0d6d",
+                "resourcePath": "objects\\obj_aux_spawnMarker\\obj_aux_spawnMarker.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -311,6 +327,14 @@
             }
         },
         {
+            "Key": "87bccc1f-0219-4913-b01d-1bd4c100ffb0",
+            "Value": {
+                "id": "7f19bbe1-abf3-4284-a79b-4e6f604d3b9e",
+                "resourcePath": "sprites\\spr_ruby_large\\spr_ruby_large.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "88340ee6-6456-4d85-b9da-0f6235c9d6eb",
             "Value": {
                 "id": "74765aae-00b6-4437-8e1a-a6bf4ba4516c",
@@ -372,6 +396,14 @@
                 "id": "0c8c0e1d-b8b7-4531-8dba-5d5da3bdcb30",
                 "resourcePath": "sprites\\spr_bullet_enemy_small\\spr_bullet_enemy_small.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9cc8b93b-9468-4e78-8f73-42bc59b82066",
+            "Value": {
+                "id": "575dd3ff-da79-4c37-845f-71751b3e38b3",
+                "resourcePath": "objects\\obj_controller_shake_minor\\obj_controller_shake_minor.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -503,14 +535,6 @@
             }
         },
         {
-            "Key": "c8d8e444-5a41-48f9-9e28-19569af16e87",
-            "Value": {
-                "id": "d188429b-b29c-4be6-ba61-3bc58c16213f",
-                "resourcePath": "sprites\\sprite19\\sprite19.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "c9b88339-c901-45d9-b663-9c3f82d76181",
             "Value": {
                 "id": "0ad3fc4a-ec36-49db-87ed-4969dc304780",
@@ -599,6 +623,22 @@
             }
         },
         {
+            "Key": "e152f4c4-71d6-422d-bac1-fa8c4ce1492d",
+            "Value": {
+                "id": "d82f0d58-537c-4360-ad67-437da9fb129e",
+                "resourcePath": "scripts\\approach\\approach.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e1f1cbcf-b42d-4d4a-b558-9068d02ac5c3",
+            "Value": {
+                "id": "f7f07f44-17a4-4e55-bfa0-2ba7738b07eb",
+                "resourcePath": "fonts\\fnt_rubies\\fnt_rubies.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "e3f92858-f438-4c42-aed2-a9afa06dedb2",
             "Value": {
                 "id": "96b7d5d9-ec07-47f4-9ac2-5249d671ca2e",
@@ -612,6 +652,14 @@
                 "id": "b010dc0c-95c3-4e24-b995-bc541dbd376c",
                 "resourcePath": "options\\android\\options_android.yy",
                 "resourceType": "GMAndroidOptions"
+            }
+        },
+        {
+            "Key": "e79b3a82-118b-4c84-80c1-5c26a106ce58",
+            "Value": {
+                "id": "ec45bc9e-40d8-4b43-9851-51be82661c00",
+                "resourcePath": "sprites\\spr_ruby_small\\spr_ruby_small.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -671,16 +719,40 @@
             }
         },
         {
+            "Key": "f95455c3-5fb1-4035-a826-426c2339778a",
+            "Value": {
+                "id": "12afcd63-ca9a-4d29-8477-6344f2883620",
+                "resourcePath": "objects\\obj_controller_level\\obj_controller_level.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f95ceaf0-043c-45fa-89a6-284ca945ed25",
+            "Value": {
+                "id": "24b37300-747b-4b07-a692-ed4752c06310",
+                "resourcePath": "objects\\obj_ruby_small\\obj_ruby_small.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f9d4839a-c288-4743-bd08-2498181f8cfd",
             "Value": {
                 "id": "a9b1eaa0-3843-4516-a61d-0f34d8b5887b",
                 "resourcePath": "objects\\obj_wpn_mgun_left\\obj_wpn_mgun_left.yy",
                 "resourceType": "GMObject"
             }
+        },
+        {
+            "Key": "ffa144dc-c02e-4b97-87fa-6a2a0c46718f",
+            "Value": {
+                "id": "c260023f-8441-4de4-bfbd-f62541183ab6",
+                "resourcePath": "sprites\\spr_blackmask\\spr_blackmask.yy",
+                "resourceType": "GMSprite"
+            }
         }
     ],
     "script_order": [
-        
+        "e152f4c4-71d6-422d-bac1-fa8c4ce1492d"
     ],
     "tutorial": ""
 }

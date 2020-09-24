@@ -25,13 +25,17 @@ switch (choice) {
 				hspeed = -obj_controller_spawner.junkerspeed;
 			}
 		}
-		alarm[0] = 20 + random(30);
+		// Set Spawn marker.
+		inst = instance_create_layer(room_width + 4 * 64, 0, "Instances", obj_aux_spawnMarker);
+		with (inst) {
+			hspeed = -obj_controller_spawner.junkerspeed;
+		}
 		break;
 	// Four junkers in a diamond shape.
 	case "pyramid":
 		var spawnPosition = random_range(4, room_height - 424);
 		var inst;
-		var r1 = 40 + random(40)
+		var r1 = 64
 		inst = instance_create_layer(room_width + r1, spawnPosition, "Instances", obj_enemy_junker);
 		with(inst) {
 				hspeed = -obj_controller_spawner.junkerspeed;
@@ -52,7 +56,11 @@ switch (choice) {
 				hspeed = -obj_controller_spawner.junkerspeed;
 				waveDistance = 0.3;	
 		}
-		alarm[0] = 20 + random(30);
+		// Set Spawn marker.
+		inst = instance_create_layer(room_width + 64 * 3, 0, "Instances", obj_aux_spawnMarker);
+		with (inst) {
+			hspeed = -obj_controller_spawner.junkerspeed;
+		}
 		break;
 	case "cruiser":
 		var spawnPosition = room_height/2 - spr_enemy_cruiser - 256;

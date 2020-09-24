@@ -6,6 +6,11 @@ if (hitpoints <= 0) {
 			event_user(1); // Combo function
 	}
 	
+	// Create rubies
+	for (i = 0; i < 6 + random(6); i++) {
+		instance_create_layer(self.x + random(64), self.y + random(64), "Instances", obj_ruby_small);
+	}
+	
 	// Create debris
 	var inst;
 	var myspeed = self.speed;

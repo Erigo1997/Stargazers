@@ -1,3 +1,3 @@
 /// @description Restart generator.
-generator = 10;
+generator += 10;
 generatorbust = false;
