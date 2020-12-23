@@ -2,18 +2,13 @@
 
 // Inherit the parent event
 event_inherited();
-hitpoints = 100;
+hitpoints = 200;
 
-var inst;
-	inst = instance_create_layer(self.x + 38, self.y + 19, "Instances2", obj_enemy_cruiserturret);
-	var localSpeed = -self.hspeed;
-	with (inst) {
-		hspeed = -obj_controller_spawner.cruiserSpeed;
-	}
+
+cannonNW = instance_create_layer(self.x + 38, self.y + 19, "Instances2", obj_enemy_cruiserturret);
 	
-var inst;
-	inst = instance_create_layer(self.x + 38, self.y + 239, "Instances2", obj_enemy_cruiserturret);
-	var localSpeed = -self.hspeed;
-	with (inst) {
-		hspeed = -obj_controller_spawner.cruiserSpeed;
-	}
+cannonSW = instance_create_layer(self.x + 38, self.y + 239, "Instances2", obj_enemy_cruiserturret);
+
+cannonNE = instance_create_layer(self.x + 200, self.y + 19, "Instances2", obj_enemy_cruiserturret);
+
+cannonSE = instance_create_layer(self.x + 200, self.y + 239, "Instances2", obj_enemy_cruiserturret);

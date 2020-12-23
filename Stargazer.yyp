@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "015c0e6a-cafd-440d-8c47-f6f4696c9344",
+            "Value": {
+                "id": "b54047bf-6df5-4b53-986b-70a88a20d57f",
+                "resourcePath": "objects\\obj_sfx_cruiserpiece\\obj_sfx_cruiserpiece.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "084f2b04-24e9-48c7-b888-85311820ae27",
             "Value": {
                 "id": "7e0a21fa-dfe9-4de9-81be-6bc60ca7f1ab",
@@ -204,6 +212,14 @@
                 "id": "d891e772-7ccf-4a2d-bee9-5fe30ab793e8",
                 "resourcePath": "objects\\obj_bullet_enemy_small\\obj_bullet_enemy_small.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "3f8f04a6-279a-4d94-b441-a4a303fa0bb8",
+            "Value": {
+                "id": "065be87e-bd96-4fc4-a9b6-49ab64c2e546",
+                "resourcePath": "sprites\\spr_fx_cruiserpiece\\spr_fx_cruiserpiece.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -396,6 +412,14 @@
                 "id": "0c8c0e1d-b8b7-4531-8dba-5d5da3bdcb30",
                 "resourcePath": "sprites\\spr_bullet_enemy_small\\spr_bullet_enemy_small.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "97e7e288-9450-447c-b3ac-b6119a242c4e",
+            "Value": {
+                "id": "2da97bdf-67c4-4c88-9f77-6c83c5630ddc",
+                "resourcePath": "objects\\obj_sfx_enemycrosshair\\obj_sfx_enemycrosshair.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -652,6 +676,14 @@
                 "id": "b010dc0c-95c3-4e24-b995-bc541dbd376c",
                 "resourcePath": "options\\android\\options_android.yy",
                 "resourceType": "GMAndroidOptions"
+            }
+        },
+        {
+            "Key": "e5502048-842c-4ff4-ab57-dfaafe2a19ca",
+            "Value": {
+                "id": "b99600f0-5bc9-4873-bdc0-60b758981b9d",
+                "resourcePath": "sprites\\spr_fx_enemycrosshair\\spr_fx_enemycrosshair.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -1,4 +1,6 @@
 /// @description
-collected = true;
-image_index = 1;
-hspeed = 0;
+if (!collected) {
+	collected = true;
+	image_index = 1;
+	alarm[0] = 10;
+}

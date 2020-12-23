@@ -25,7 +25,8 @@ if instance_exists(obj_playership) {
 	
 	// Draw rubies
 	draw_set_font(fnt_general);
-	draw_text(0, 0, rubies);
+	draw_text(60, 10, rubies);
+	draw_sprite(spr_ruby_large, 0, 20, 23);
 	
 }
 
