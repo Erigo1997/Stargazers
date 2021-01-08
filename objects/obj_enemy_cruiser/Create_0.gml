@@ -2,7 +2,7 @@
 
 // Inherit the parent event
 event_inherited();
-hitpoints = 200;
+hitpoints = 250;
 
 
 cannonNW = instance_create_layer(self.x + 38, self.y + 19, "Instances2", obj_enemy_cruiserturret);

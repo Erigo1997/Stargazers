@@ -6,8 +6,11 @@ if (hitpoints <= 0) {
 			event_user(1); // Combo function
 	}
 	
+	// Create level transition controller
+	instance_create_layer(0, 0, "Instances", obj_controller_leveltransition);
+	
 	// Create rubies
-	for (i = 0; i < 20 + random(6); i++) {
+	for (i = 0; i < 30 + random(8); i++) {
 		var inst;
 		inst = instance_create_layer(self.x + random(sprite_width), self.y + random(sprite_height), "Instances", obj_ruby_small);
 		with (inst) {
@@ -62,6 +65,9 @@ if (hitpoints <= 0) {
 		image_speed = 0;
 		image_index = 5;
 	}
+	
+	audio_play_sound(choose(snd_ship_death1, snd_ship_death2, snd_ship_death3), 5, false);
+	
 	instance_destroy();
 }
 
@@ -71,17 +77,25 @@ if (x < room_width/2) {
 }
 
 // Move all turrets.
-cannonNW.x = self.x + 38;
-cannonNW.y = self.y + 19
+if (instance_exists(cannonNW)) {
+	cannonNW.x = self.x + 38;
+	cannonNW.y = self.y + 19;
+}
 
-cannonSW.x = self.x + 38;
-cannonSW.y = self.y + 239;
+if (instance_exists(cannonSW)) {
+	cannonSW.x = self.x + 38;
+	cannonSW.y = self.y + 239;
+}
 
-cannonNE.x = self.x + 200;
-cannonNE.y = self.y + 19;
+if (instance_exists(cannonNE)) {
+	cannonNE.x = self.x + 200;
+	cannonNE.y = self.y + 19;
+}
 
-cannonSE.x = self.x + 200;
-cannonSE.y = self.y + 239;
+if (instance_exists(cannonSE)) {
+	cannonSE.x = self.x + 200;
+	cannonSE.y = self.y + 239;
+}
 
 
 // Adjust waving.

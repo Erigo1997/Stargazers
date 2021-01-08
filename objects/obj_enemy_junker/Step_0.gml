@@ -7,7 +7,7 @@ if (hitpoints <= 0) {
 	}
 	
 	// Create rubies
-	for (i = 0; i < 6 + random(6); i++) {
+	for (i = 0; i < 2 + random(5); i++) {
 		var inst;
 		inst = instance_create_layer(self.x + random(64), self.y + random(64), "Instances", obj_ruby_small);
 		with (inst) {

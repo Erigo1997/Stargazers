@@ -1,3 +1,4 @@
 /// @description 
 
-alarm[0] = 20;
+alarm[0] = 10;
+present = false;

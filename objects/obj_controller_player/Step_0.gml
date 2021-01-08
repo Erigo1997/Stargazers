@@ -11,7 +11,13 @@ if (!generatorbust && generator == 0) {
 	combo = 0;
 }
 
-// Recharge
+// If Shield is below max, set alarm
+if (shield < shieldmax && !shieldalarm) {
+	shieldalarm = true;
+	alarm[5] = 180;
+}
+
+// Recharge Generator
 if (!generatorpause && !generatorbust && generator < maxGenerator) {
 	combo = 0;
 	generator += 2;
@@ -24,7 +30,7 @@ if (!generatorpause && !generatorbust && generator < maxGenerator) {
 	}
 }
 
-// Recharges ComboBoost
+// Recharges with ComboBoost
 if (comboBoost) {
 	if (generator < maxGenerator) {
 	generator += 3;
@@ -68,6 +74,12 @@ if (hitpoints <= 0) {
 		image_speed = 0;
 		image_index = 3;
 	}
+	
+	audio_play_sound(snd_player_death, 15, false); // Play death sound
+	
+	instance_destroy(obj_wpn_mgun_controller); // Destroys controllers that in turn destroy objects.
+	instance_destroy(obj_wpn_ccan_controller);
+	
 	instance_destroy(obj_playership);
 	hitpoints = 3;
 	
@@ -77,6 +89,5 @@ if (hitpoints <= 0) {
 			event_user(0);
 		}
 	}
-	obj_controller_background.starSpeedtarget = 0;
 	
 }

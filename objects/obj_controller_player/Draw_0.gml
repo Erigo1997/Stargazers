@@ -20,13 +20,13 @@ if instance_exists(obj_playership) {
 	// Draw combo
 	if (combo > 2) {
 		draw_set_font(fnt_general);
-		draw_text(obj_playership.x + 32, obj_playership.y - 24, combo); 
+		draw_text(obj_playership.x + 24, obj_playership.y - 32, combo); 
 	}
 	
 	// Draw rubies
 	draw_set_font(fnt_general);
 	draw_text(60, 10, rubies);
-	draw_sprite(spr_ruby_large, 0, 20, 23);
+	draw_sprite(spr_ruby_large, 0, 20, 14);
 	
 }
 

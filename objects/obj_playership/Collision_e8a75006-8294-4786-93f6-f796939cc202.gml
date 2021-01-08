@@ -2,7 +2,9 @@
 if (obj_controller_player.invulnerable) { exit }
 image_index = 1;
 alarm[0] = 1;
-obj_controller_player.hitpoints -= 1;
+with (obj_controller_player) {
+	event_user(3);
+}
 
 // Create some SFX
 for (i = 0; i < 5; i += 1) {

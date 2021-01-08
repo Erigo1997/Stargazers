@@ -1,8 +1,15 @@
 /// @description Take Damage
 if (obj_controller_player.invulnerable) { exit }
+
+// Check shield.
 image_index = 1;
-alarm[0] = 1;
-obj_controller_player.hitpoints -= 1;
+if (obj_controller_player.shield > 0) { // We should play a different sound here when shield is hit.
+	obj_controller_player.shield -= 1;
+} else {
+	with (obj_controller_player) {
+		event_user(3);
+	}
+}
 
 // Create some SFX
 for (i = 0; i < 5; i += 1) {

@@ -1,6 +1,3 @@
-if (!ready) exit; // Failsafe.
-if (!isLeft) exit;
-
 /// @description Shoot. Create bullets, control alarms and cooldowns.
 // Make sure we at all have generator to shoot.
 if (obj_controller_player.generator > 0) {
@@ -47,9 +44,10 @@ if (obj_controller_player.generator > 0) {
 			obj_wpn_mgun_right.alarm[0] = 2;
 		}
 		// Code that must occur regardless of side happens here.
+		isLeft = !isLeft;
 		obj_controller_shake_minor.shake = true;
 		audio_play_sound(snd_mgun2, 10, false);
 		cooldown = 1;
-		alarm[0] = 6 - global.playerAttackSpeed;
+		alarm[0] = 5 - global.playerAttackSpeed;
 	}
 }

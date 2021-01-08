@@ -1,6 +1,6 @@
-/// @description Spawns waves of enemies and calls itself.
+/// @description Spawns waves of enemies and spawn markers.
 
-var choice = choose("plinkwaver", "echelon", "pyramid", "waver");
+var choice = choose("plinkwaver", "echelon", "doubleechelon", "pyramid", "waver");
 
 switch (choice) {
 	// Three plinkers waving
@@ -27,6 +27,26 @@ switch (choice) {
 		}
 		// Set Spawn marker.
 		inst = instance_create_layer(room_width + 4 * 64, 0, "Instances", obj_aux_spawnMarker);
+		with (inst) {
+			hspeed = -obj_controller_spawner.junkerspeed;
+		}
+		break;
+	// Eight junkers in an double echelon
+	case "doubleechelon":
+		var spawnPosition = random_range(4, room_height - 800);
+		var inst;
+		for (var i = 0; i < 4; i++) {
+			inst = instance_create_layer(room_width + i * 40, spawnPosition + i * 75, "Instances", obj_enemy_junker);
+			with(inst) {
+				hspeed = -obj_controller_spawner.junkerspeed;
+			}
+			inst = instance_create_layer(room_width + i * 40, spawnPosition + ((800 - 64) - i * 75), "Instances", obj_enemy_junker);
+			with(inst) {
+				hspeed = -obj_controller_spawner.junkerspeed;
+			}
+		}
+		// Set Spawn marker.
+		inst = instance_create_layer(room_width + 5 * 64, 0, "Instances", obj_aux_spawnMarker);
 		with (inst) {
 			hspeed = -obj_controller_spawner.junkerspeed;
 		}
@@ -62,12 +82,4 @@ switch (choice) {
 			hspeed = -obj_controller_spawner.junkerspeed;
 		}
 		break;
-	case "cruiser":
-		var spawnPosition = room_height/2 - spr_enemy_cruiser - 256;
-		var inst;
-		inst = instance_create_layer(room_width + 8, spawnPosition, "Instances", obj_enemy_cruiser);
-		with (inst) {
-			hspeed = -obj_controller_spawner.junkerspeed + 12;
-		}
-		alarm[0] = 60;
 }

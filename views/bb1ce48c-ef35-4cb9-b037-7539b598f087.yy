@@ -10,7 +10,8 @@
         "e3f92858-f438-4c42-aed2-a9afa06dedb2",
         "015c0e6a-cafd-440d-8c47-f6f4696c9344",
         "7014794a-20c0-4dc8-baf8-c42d1a2062e2",
-        "97e7e288-9450-447c-b3ac-b6119a242c4e"
+        "97e7e288-9450-447c-b3ac-b6119a242c4e",
+        "fa163629-1110-4fba-90b9-c8bf7c37761b"
     ],
     "filterType": "GMObject",
     "folderName": "sfx",

@@ -1,2 +1,5 @@
 /// @description Change sprite back
-image_index = 0;
+instance_destroy(self);
+with(obj_controller_player) {
+	event_user(2);
+}
