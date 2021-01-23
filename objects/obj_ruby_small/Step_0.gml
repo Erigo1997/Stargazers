@@ -13,6 +13,10 @@ if (self.x < 0) {
 	instance_destroy(self);
 }
 
+if (!instance_exists(obj_controller_player)) {
+	exit;
+}
+
 if (distance_to_object(obj_playership) < obj_controller_player.magnetRadius) {
 	move_towards_point(obj_playership.x + 32, obj_playership.y + 32, max(obj_controller_player.magnetRadius/2 - distance_to_object(obj_playership), obj_controller_spawner.junkerspeed));
 }

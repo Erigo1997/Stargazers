@@ -1,6 +1,6 @@
 /// @description
 title = "none";
-description = "none";
+description = "";
 hover = false;
 ad = noone;
 result = noone;

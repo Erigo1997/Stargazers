@@ -1,5 +1,5 @@
 /// @description Variables
-junkerspeed = 10;
+junkerspeed = 13;
 auxcount = 0;
 auxspawn = 0;
 

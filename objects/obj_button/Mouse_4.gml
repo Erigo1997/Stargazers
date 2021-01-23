@@ -9,4 +9,9 @@ if (resultbonus) {
 }
 
 obj_controller_weaponselect.alarm[0] = 10;
+
+with (obj_controller_tooltip) {
+	event_user(1);	
+}
+
 instance_destroy(obj_button);

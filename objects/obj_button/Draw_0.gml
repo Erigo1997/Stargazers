@@ -7,4 +7,3 @@ if (!hover) {
 
 draw_set_font(fnt_general);
 draw_text(self.x + 64, self.y + 64, title);
-draw_text(self.x + 64, self.y + 450, description);

@@ -9,4 +9,5 @@ instance_create_layer(0, 0, "Instances", obj_controller_level1);
 instance_create_layer(0, 0, "Instances", obj_controller_debug);
 instance_create_layer(0, 0, "Instances", obj_controller_musicplayer);
 instance_create_layer(0, 0, "Instances", obj_controller_mainmenu);
+instance_create_layer(0, 0, "Tooltip", obj_controller_tooltip);
 

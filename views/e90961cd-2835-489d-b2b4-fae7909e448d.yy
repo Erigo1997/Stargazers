@@ -19,7 +19,11 @@
         "b2fe65ae-ffc5-41e6-84ab-f179669f937e",
         "2d973b99-b7c9-4ded-83f7-f60ff7301ee5",
         "0ca77a00-0fa2-468e-813b-cdf1eaa64c62",
-        "0f6ff1dc-ee66-4113-b316-308560146bc5"
+        "0f6ff1dc-ee66-4113-b316-308560146bc5",
+        "00a4cede-fe18-4ed6-aeae-bb6889346ebe",
+        "af15d867-45d4-4b3d-b608-d5c24011d659",
+        "6dfa6c60-0d7d-44a2-acbe-ad0fc2cbcbae",
+        "b5f6aea2-0409-420f-bceb-0762eff4d0e5"
     ],
     "filterType": "GMObject",
     "folderName": "controllers",

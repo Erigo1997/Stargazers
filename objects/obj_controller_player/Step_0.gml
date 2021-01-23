@@ -5,16 +5,23 @@ if (superOn) {
 }
 
 // Waits three secs to reboot the generator
+// If we have Overheater, we convert the shield into energy instead.
 if (!generatorbust && generator == 0) {
-	generatorbust = true;
-	alarm[0] = 90;
-	combo = 0;
+	if (shield > 0 && obj_controller_techtree_player.upg_overheater) {
+		shield--;
+		generator = 50;
+		// ------- TODO: Play some SFX ------------
+	} else {
+		generatorbust = true;
+		alarm[0] = 90;
+		combo = 0;
+	}
 }
 
 // If Shield is below max, set alarm
 if (shield < shieldmax && !shieldalarm) {
 	shieldalarm = true;
-	alarm[5] = 180;
+	alarm[5] = shieldRechargeTime;
 }
 
 // Recharge Generator
@@ -89,5 +96,7 @@ if (hitpoints <= 0) {
 			event_user(0);
 		}
 	}
+	
+	instance_destroy();
 	
 }

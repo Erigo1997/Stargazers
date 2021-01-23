@@ -16,38 +16,73 @@ if (obj_controller_player.generator > 0) {
 			obj_controller_player.generator -= generatorCost;
 		}
 		
-		// Shoot either left or right gun depending on whose turn it is.
+		// Shoot weapon
+		var currentGun = noone;
 		if (isLeft) {
-			inst = instance_create_layer(obj_wpn_mgun_left.x + 24, obj_wpn_mgun_left.y, "Bullets", obj_bullet_player);
-			with (inst) {
-				speed = 35;
-				direction = 355 + random(10);
-			}
-			// Creates muzzleflash effect and moves the gun with recoil effect.
-			inst = instance_create_layer(obj_wpn_mgun_left.x + 24, obj_wpn_mgun_left.y, "Bullets", obj_sfx_muzzleflash);
-			with (inst) {
-				image_angle = -90;
-			}
-			obj_wpn_mgun_left.recoil = 1;
-			obj_wpn_mgun_left.alarm[0] = 2;
+			currentGun = obj_wpn_mgun_left;
 		} else {
-			inst = instance_create_layer(obj_wpn_mgun_right.x + 24, obj_wpn_mgun_right.y, "Bullets", obj_bullet_player);
-			with (inst) {
-				speed = 35;
-				direction = 355 + random(10);
-			}
-			inst = instance_create_layer(obj_wpn_mgun_right.x + 24, obj_wpn_mgun_right.y, "Bullets", obj_sfx_muzzleflash);
-			with (inst) {
-				image_angle = -90;
-			}
-			obj_wpn_mgun_right.recoil = 1;
-			obj_wpn_mgun_right.alarm[0] = 2;
+			currentGun = obj_wpn_mgun_right;
 		}
+		inst = instance_create_layer(currentGun.x + 24, currentGun.y, "Bullets", obj_bullet_player);
+		if (obj_controller_techtree_mgun.upg_piercingammunition) {
+			inst.piercing = true;
+		}
+		if (obj_controller_techtree_mgun.upg_fragmentationheads) {
+			inst.fragmentation = 1;
+			if (obj_controller_techtree_mgun.upg_shatterheads) {
+				inst.fragmentation = 2;
+			}
+		}
+		with (inst) {
+			speed = 35;
+			if (!obj_controller_techtree_mgun.upg_precisionfiring) 
+			{
+				direction = 350 + random(20);
+			} else {
+				direction = 360;
+			}
+		}
+		if (obj_controller_techtree_mgun.upg_muzzlebarrels) {
+			inst = instance_create_layer(currentGun.x + 24, currentGun.y, "Bullets", obj_bullet_player);
+			inst.small = true;
+			inst.speed = 25;
+			inst.direction = 360 + 3
+			inst = instance_create_layer(currentGun.x + 24, currentGun.y, "Bullets", obj_bullet_player);
+			inst.small = true;
+			inst.speed = 25;
+			inst.direction = 360 - 3
+			if (obj_controller_techtree_mgun.upg_muzzlestorm) {
+				inst = instance_create_layer(currentGun.x + 24, currentGun.y, "Bullets", obj_bullet_player);
+				inst.small = true;
+				inst.speed = 25;
+				inst.direction = 360 + 5
+				inst = instance_create_layer(currentGun.x + 24, currentGun.y, "Bullets", obj_bullet_player);
+				inst.small = true;
+				inst.speed = 25;
+				inst.direction = 360 - 5
+			}
+		}
+		// Creates muzzleflash effect and moves the gun with recoil effect.
+		inst = instance_create_layer(currentGun.x + 24, currentGun.y, "Bullets", obj_sfx_muzzleflash);
+		with (inst) {
+			image_angle = -90;
+		}
+		currentGun.recoil = 1;
+		currentGun.alarm[0] = 2;
+		
 		// Code that must occur regardless of side happens here.
 		isLeft = !isLeft;
 		obj_controller_shake_minor.shake = true;
-		audio_play_sound(snd_mgun2, 10, false);
+		audio_play_sound(snd_mgun, 10, false);
 		cooldown = 1;
-		alarm[0] = 5 - global.playerAttackSpeed;
+		if (overload > 0) {
+			alarm[0] = 1;
+			overload --;
+			overload --;
+		} else if (!unload) {
+			alarm[0] = obj_controller_player.attackspeedfactor;
+		} else {
+			alarm[0] = obj_controller_player.attackspeedfactor/2;
+		}
 	}
 }

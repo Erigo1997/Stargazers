@@ -28,5 +28,14 @@ if instance_exists(obj_playership) {
 	draw_text(60, 10, rubies);
 	draw_sprite(spr_ruby_large, 0, 20, 14);
 	
+	// Draw phasegear
+	if (phasegear) {
+		if (phasegearReady) {
+			draw_sprite(spr_phasegearstatus, 0, obj_playership.x, obj_playership.y + 66);
+		} else {
+			draw_sprite(spr_phasegearstatus, 1, obj_playership.x, obj_playership.y + 66);
+		}
+	}
+	
 }
 

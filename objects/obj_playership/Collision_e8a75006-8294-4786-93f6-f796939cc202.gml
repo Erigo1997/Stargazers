@@ -1,5 +1,6 @@
 /// @description Take Damage
 if (obj_controller_player.invulnerable) { exit }
+
 image_index = 1;
 alarm[0] = 1;
 with (obj_controller_player) {
