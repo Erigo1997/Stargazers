@@ -6,7 +6,7 @@ switch (researched) {
 	break;
 	case "thrust boost":
 	upg_thrustboost = true;
-	obj_controller_player.speedfactor *= 1.25;
+	obj_controller_player.speedfactor += 6;
 	break;
 	case "shield accelerator":
 	upg_shieldaccelerator = true;
@@ -25,7 +25,7 @@ switch (researched) {
 	break;
 	case "solid fuel accelerant":
 	upg_solidfuelaccelerant = true;
-	obj_controller_player.speedfactor *= 1.25;
+	obj_controller_player.speedfactor += 6
 	break;
 	case "overheater":
 	upg_overheater = true; // Player controller checks this flag

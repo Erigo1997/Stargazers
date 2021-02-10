@@ -7,4 +7,4 @@ status = 0;
 name = "Shatterheads";
 switchcasename = "shatterheads";
 description = "Fragmentations doubled"
-price = 80;
+price = 180;

@@ -9,7 +9,7 @@ attackspeedfactor = 1;
 // Shield vars
 shield = 1;
 shieldmax = 1;
-shieldRechargeTime = 180;
+shieldRechargeTime = 120;
 shieldalarm = false;
 
 // Generator functions
@@ -25,13 +25,14 @@ superOn = false;
 combo = 0;
 comboBoost = false;
 
-
 magnetRadius = 60; // Radius to collect rubies
 
 // Phasegear
 phasegear = false;
 phasegearReady = true;
-phasegearDuration = 30;
-phasegearCooldown = 150;
+phasegearDuration = 90;
+phasegearCooldown = 250;
 
-instance_create_layer(0, 0, "Instances", obj_controller_techtree_player); // Create a player techtree object
+// Reference variables
+ctrl_techtree = instance_create_layer(0, 0, "Instances", obj_controller_techtree_player); // Create a player techtree object
+ctrl_weapon = noone;

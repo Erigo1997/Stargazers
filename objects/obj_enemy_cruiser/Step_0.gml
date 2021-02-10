@@ -6,15 +6,12 @@ if (hitpoints <= 0) {
 			event_user(1); // Combo function
 	}
 	
-	// Create level transition controller
-	instance_create_layer(0, 0, "Instances", obj_controller_leveltransition);
-	
 	// Create rubies
 	for (i = 0; i < 30 + random(8); i++) {
 		var inst;
 		inst = instance_create_layer(self.x + random(sprite_width), self.y + random(sprite_height), "Instances", obj_ruby_small);
 		with (inst) {
-			hspeed = -obj_controller_spawner.junkerspeed - 6 + random(10);
+			hspeed = -global.junkerspeed - 6 + random(10);
 			vspeed = -7 + random(12);
 		}
 	}
@@ -71,6 +68,12 @@ if (hitpoints <= 0) {
 	instance_destroy();
 }
 
+// Spawn lifeboats if dying
+if (hitpoints < 150 && lifeboatSpawn) {
+	lifeboatSpawn = false;
+	alarm[1] = 5;
+}
+
 // Stop moving at the middle of the screen.
 if (x < room_width/2) {
 	hspeed = 0;
@@ -101,14 +104,14 @@ if (instance_exists(cannonSE)) {
 // Adjust waving.
 if (waveDistance != 0) {
 	if (waveDown) {
-		vspeed += 0.2;
+		vspeed += 0.1;
 	}
 
 	if (!waveDown) {
-		vspeed -= 0.2;
-	}
+		vspeed -= 0.1;
+	} 
 	
-	if (vspeed < -(waveDistance * 30) || vspeed > (waveDistance * 30)) {
+	if (vspeed < -(waveDistance * 10) || vspeed > (waveDistance * 10)) {
 		waveDown = !waveDown;
 	}
 }

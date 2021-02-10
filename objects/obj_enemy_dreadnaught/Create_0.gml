@@ -2,6 +2,8 @@
 
 // Inherit the parent event
 event_inherited();
+
+crashImmune = true;
 hitpoints = 1000;
 
 

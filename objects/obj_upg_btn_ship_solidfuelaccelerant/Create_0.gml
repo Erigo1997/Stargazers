@@ -7,4 +7,4 @@ status = 0;
 name = "Solid Fuel Accelerant";
 switchcasename = "solid fuel accelerant";
 description = "Increase ship movement speed by 25%"
-price = 80;
+price = 180;

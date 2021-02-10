@@ -36,7 +36,7 @@ if (hitpoints <= 0) {
 		var inst;
 		inst = instance_create_layer(self.x + random(64), self.y + random(64), "Instances", obj_ruby_small);
 		with (inst) {
-			hspeed = -obj_controller_spawner.junkerspeed - 5 + random(10);
+			hspeed = -global.junkerspeed - 5 + random(10);
 			vspeed = -5 + random(10);
 		}
 	}

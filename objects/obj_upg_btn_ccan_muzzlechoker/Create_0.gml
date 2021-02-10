@@ -7,4 +7,4 @@ status = 0;
 name = "Muzzle Choker";
 switchcasename = "muzzle choker";
 description = "Choke spread on shot"
-price = 30;
+price = 20;

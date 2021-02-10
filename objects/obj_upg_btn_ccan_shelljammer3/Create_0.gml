@@ -7,4 +7,4 @@ status = 0;
 name = "SHELLJAMMER!";
 switchcasename = "shelljammer3";
 description = "Shoot even more projectiles!!"
-price = 60;
+price = 260;

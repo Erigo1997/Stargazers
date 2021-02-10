@@ -7,4 +7,4 @@ status = 0;
 name = "Muzzle Storm";
 switchcasename = "muzzle storm";
 description = "Fire even more small bullets"
-price = 120;
+price = 320;

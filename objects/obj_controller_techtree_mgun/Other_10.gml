@@ -5,7 +5,7 @@ switch (researched) {
 	break;
 	case "routine efficiency":
 	upg_routineefficiency = true;
-	obj_controller_player.attackspeedfactor = 4;
+	obj_controller_player.attackspeedfactor -= 2;
 	break;
 	case "piercing ammunition":
 	upg_piercingammunition = true;

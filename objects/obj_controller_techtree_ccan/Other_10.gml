@@ -9,7 +9,7 @@ switch (researched) {
 	break;
 	case "routine efficiency":
 	upg_routineefficiency = true;
-	obj_controller_player.attackspeedfactor = 13;
+	obj_controller_player.attackspeedfactor = 23;
 	break;
 	case "shell recycle":
 	upg_shellrecycle = true;

@@ -7,4 +7,4 @@ status = 0;
 name = "Routine Efficiency";
 switchcasename = "routine efficiency";
 description = "Fire rate increased 35%"
-price = 90;
+price = 80;

@@ -7,4 +7,4 @@ status = 0;
 name = "Overheater";
 switchcasename = "overheater";
 description = "Turn shield power into energy when generator is dry"
-price = 130;
+price = 230;

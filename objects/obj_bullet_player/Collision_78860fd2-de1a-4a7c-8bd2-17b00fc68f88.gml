@@ -1,6 +1,8 @@
 /// @description Deal damaage
 if (ignore == other) { exit }; // ignore collision if bullet wants to ignore
 
+part_particles_create(global.P_System, self.x, self.y, global.Particle1, 50);
+
 /// @description Take damage.
 other.image_index = 1; // Set others sprite to flash white
 other.alarm[0] = 1; // Changes others sprite back

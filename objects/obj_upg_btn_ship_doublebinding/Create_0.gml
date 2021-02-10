@@ -7,4 +7,4 @@ status = 0;
 name = "Doublebinding";
 switchcasename = "doublebinding";
 description = "Gain additional shield layer"
-price = 140;
+price = 340;

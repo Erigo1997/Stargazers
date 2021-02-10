@@ -1,5 +1,14 @@
 /// @description Recharge generator if it isn't on zero. Kill player.
 
+// Don't allow gen to flow under or over.
+if (generator < 0) {
+	generator = 0;
+}
+
+if (generator > 120) {
+	generator = 120;
+}
+
 if (superOn) {
 	generator = maxGenerator;
 }
@@ -13,7 +22,7 @@ if (!generatorbust && generator == 0) {
 		// ------- TODO: Play some SFX ------------
 	} else {
 		generatorbust = true;
-		alarm[0] = 90;
+		alarm[0] = 150;
 		combo = 0;
 	}
 }
@@ -27,13 +36,13 @@ if (shield < shieldmax && !shieldalarm) {
 // Recharge Generator
 if (!generatorpause && !generatorbust && generator < maxGenerator) {
 	combo = 0;
-	generator += 2;
+	generator += 1;
 	if (generator > maxGenerator) {
 		generator = maxGenerator;
 	}
 	if (generator == (maxGenerator - 2) || generator == (maxGenerator - 1)) {
 		superReady = true;
-		alarm[2] = 5;
+		alarm[2] = 10;
 	}
 }
 
@@ -91,12 +100,13 @@ if (hitpoints <= 0) {
 	hitpoints = 3;
 	
 	// Stop spawning.
-	if (instance_exists(obj_controller_spawner)) {
-		with (obj_controller_spawner) {
-			event_user(0);
+	if (instance_exists(obj_controller_level1)) {
+		with (obj_controller_level1) {
+			event_user(0); // Stops timelines
 		}
 	}
-	
+
 	instance_destroy();
+
 	
 }

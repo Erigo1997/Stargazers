@@ -7,4 +7,4 @@ status = 0;
 name = "Chamber Overload";
 switchcasename = "chamber overload";
 description = "Charge a short burst incredible firing rate while not shooting"
-price = 90;
+price = 195;

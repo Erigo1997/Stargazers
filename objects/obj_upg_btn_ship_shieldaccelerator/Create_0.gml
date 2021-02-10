@@ -7,4 +7,4 @@ status = 0;
 name = "Shield Accelerator";
 switchcasename = "shield accelerator";
 description = "Cut shield recharge time by 25%"
-price = 55;
+price = 65;

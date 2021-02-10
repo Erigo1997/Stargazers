@@ -7,4 +7,4 @@ status = 0;
 name = "Muzzle Barrels";
 switchcasename = "muzzle barrels";
 description = "Fire additional small bullets"
-price = 120;
+price = 260;

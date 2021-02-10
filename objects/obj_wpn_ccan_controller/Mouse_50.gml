@@ -9,7 +9,7 @@ if (obj_controller_player.generator > 0) {
 			event_user(0); // Traps the generator if within the timer.
 		}
 		obj_controller_player.generatorpause = true;
-		obj_controller_player.alarm[1] = 20 + obj_controller_player.attackspeedfactor; // Unpause generator. Should be longer than cooldown.
+		obj_controller_player.alarm[1] = obj_controller_player.attackspeedfactor + 1; // Unpause generator. Should be longer than cooldown.
 		if (obj_controller_player.generator < generatorCost) {
 			obj_controller_player.generator = 0;
 		} else {
@@ -32,7 +32,7 @@ if (obj_controller_player.generator > 0) {
 				dir = 350 + random(20);
 			}
 			with (inst) {
-				speed = 20 + random (10);
+				speed = 15 + random (6);
 				direction = dir;
 			}
 		}

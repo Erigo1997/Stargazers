@@ -9,7 +9,7 @@ if (obj_controller_player.generator > 0) {
 			event_user(0); // Traps the generator if within the timer.
 		}
 		obj_controller_player.generatorpause = true;
-		obj_controller_player.alarm[1] = 5;
+		obj_controller_player.alarm[1] = 10;
 		if (obj_controller_player.generator < generatorCost) {
 			obj_controller_player.generator = 0;
 		} else {
@@ -34,7 +34,7 @@ if (obj_controller_player.generator > 0) {
 			}
 		}
 		with (inst) {
-			speed = 35;
+			speed = 23;
 			if (!obj_controller_techtree_mgun.upg_precisionfiring) 
 			{
 				direction = 350 + random(20);

@@ -18,4 +18,6 @@ for (i = 0; i < 5; i += 1) {
 	}
 }
 
-other.hitpoints = 0;
+if (!other.crashImmune) {
+	other.hitpoints = 0;
+}

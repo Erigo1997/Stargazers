@@ -1,4 +1,8 @@
 /// @description Destroy children
+event_inherited();
+
+timeline_running = false;
+
 if (instance_exists(cannonNW)) {
 	cannonNW.hitpoints = 0;
 }

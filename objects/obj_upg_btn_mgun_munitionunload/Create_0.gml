@@ -7,4 +7,4 @@ status = 0;
 name = "Munition Unload";
 switchcasename = "munition unload";
 description = "50% increased fire rate when generator is trapped or below 50% energy"
-price = 105;
+price = 205;

@@ -12,7 +12,7 @@ if (timer == 1) {
 	}
 }
 
-if (timer == 6) {
+if (timer == 5) {
 	var but = instance_create_layer(608, 64, "Instances", obj_button);
 	var ad = instance_create_layer(608 + 64, 300, "Instances2", obj_ad_mgun);
 	with (but) {
@@ -23,7 +23,7 @@ if (timer == 6) {
 	}
 }
 
-if (timer == 11) {
+if (timer == 9) {
 	var but = instance_create_layer(1088, 64, "Instances", obj_button);
 	var ad = instance_create_layer(1088 + 64, 300, "Instances2", obj_ad_ccan);
 	with (but) {

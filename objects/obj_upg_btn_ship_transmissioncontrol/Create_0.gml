@@ -7,4 +7,4 @@ status = 0;
 name = "Transmission Control";
 switchcasename = "transmission control";
 description = "Extend Phasegear duration by 50%"
-price = 75;
+price = 145;

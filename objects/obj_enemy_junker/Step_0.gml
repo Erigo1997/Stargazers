@@ -5,6 +5,11 @@ if (hitpoints <= 0) {
 	// Check if any upgrades need attention
 	if (instance_exists(obj_controller_techtree_ccan) && obj_controller_techtree_ccan.upg_propagation) {	
 		// Fire a new shot.
+		if (instance_exists(obj_wpn_ccan_controller)) {
+			var numshot = obj_wpn_ccan_controller.numberOfShot
+		} else { 
+			var numshot = 4; 
+		}
 		for (i = 0; i < obj_wpn_ccan_controller.numberOfShot; i += 1) {
 			inst = instance_create_layer(self.x + 32, self.y + 32, "Bullets", obj_bullet_player);
 			var dir = 0;
@@ -26,7 +31,7 @@ if (hitpoints <= 0) {
 		var inst;
 		inst = instance_create_layer(self.x + random(64), self.y + random(64), "Instances", obj_ruby_small);
 		with (inst) {
-			hspeed = -obj_controller_spawner.junkerspeed - 5 + random(10);
+			hspeed = -global.junkerspeed - 5 + random(10);
 			vspeed = -5 + random(10);
 		}
 	}
@@ -68,13 +73,35 @@ if (hitpoints <= 0) {
 
 if (waveDistance != 0) {
 	if (waveDown) {
-		vspeed += 0.4;
+		vspeed += waveSpeed;
 	}
 
 	if (!waveDown) {
-		vspeed -= 0.4;
+		vspeed -= waveSpeed;
 	}
-	if (vspeed < -(waveDistance * 15) || vspeed > (waveDistance * 15)) {
+	if (vspeed < -(waveDistance * waveFactor) || vspeed > (waveDistance * waveFactor)) {
 		waveDown = !waveDown;
 	}
+}
+
+if (sacrifice) {
+	if (!instance_exists(sacrificeFor) && instance_exists(obj_playership)) {
+		targetx = 0;
+		targety = 0;
+		sacrifice = false;
+		if (obj_playership.x < x) {
+			direction = point_direction(x, y, obj_playership.x, obj_playership.y);
+		} else {
+			direction = point_direction(x, y, -64, y);
+		}
+		charge = true;
+	}
+}
+
+if (charge && speed < global.junkerspeed * 2.2) {
+	speed += 0.5;
+}
+
+if (targetx != 0) {
+	move_towards_point(targetx - 32, targety - 32, min(point_distance(self.x + 32, self.y + 32, targetx, targety)/15, global.junkerspeed));
 }

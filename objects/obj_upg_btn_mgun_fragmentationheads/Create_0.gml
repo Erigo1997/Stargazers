@@ -7,4 +7,4 @@ status = 0;
 name = "Fragmentation Heads";
 switchcasename = "fragmentation heads";
 description = "Bullets explode into fragmentations"
-price = 95;
+price = 195;

@@ -5,13 +5,13 @@
     "name": "Windows",
     "option_windows_allow_fullscreen_switching": true,
     "option_windows_borderless": false,
-    "option_windows_company_info": "YoYo Games Ltd",
+    "option_windows_company_info": "Dry Critical",
     "option_windows_copy_exe_to_dest": false,
-    "option_windows_copyright_info": "(c) 2018 CompanyName",
-    "option_windows_description_info": "A GameMaker Studio 2 Game",
+    "option_windows_copyright_info": "(c) 2021 Dry Critical",
+    "option_windows_description_info": "A Dry Critical Production",
     "option_windows_disable_sandbox": false,
     "option_windows_display_cursor": true,
-    "option_windows_display_name": "Made in GameMaker Studio 2",
+    "option_windows_display_name": "Stargazer",
     "option_windows_enable_steam": false,
     "option_windows_executable_name": "${project_name}",
     "option_windows_icon": "${base_options_dir}\\windows\\icons\\icon.ico",
@@ -20,7 +20,7 @@
     "option_windows_interpolate_pixels": false,
     "option_windows_license": "${base_options_dir}\\windows\\installer\\license.txt",
     "option_windows_nsis_file": "${base_options_dir}\\windows\\installer\\nsis_script.nsi",
-    "option_windows_product_info": "Made in GameMaker Studio 2",
+    "option_windows_product_info": "Stargazer",
     "option_windows_resize_window": false,
     "option_windows_save_location": 0,
     "option_windows_scale": 0,
@@ -31,10 +31,10 @@
     "option_windows_texture_page": "2048x2048",
     "option_windows_use_splash": false,
     "option_windows_version": {
-        "build": 0,
-        "major": 1,
-        "minor": 0,
-        "revision": 0
+        "build": 3,
+        "major": 0,
+        "minor": 1,
+        "revision": 8
     },
     "option_windows_vsync": false
 }

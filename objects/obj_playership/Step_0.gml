@@ -1,7 +1,7 @@
 /// @description Move ship. Set sprite.
 
 // Move ship towards mouse.
-move_towards_point(mouse_x - 32, mouse_y - 32, min(point_distance(x + 32, y + 32, mouse_x, mouse_y)/15, obj_controller_player.speedfactor));
+move_towards_point(mouse_x - 32, mouse_y - 32, min(point_distance(x + 32, y + 32, mouse_x, mouse_y)/5, obj_controller_player.speedfactor));
 
 if (obj_controller_player.invulnerable && obj_controller_player.shield > 0) {
 	image_index = 3;

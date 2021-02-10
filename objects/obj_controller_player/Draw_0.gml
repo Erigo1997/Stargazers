@@ -26,7 +26,11 @@ if instance_exists(obj_playership) {
 	// Draw rubies
 	draw_set_font(fnt_general);
 	draw_text(60, 10, rubies);
-	draw_sprite(spr_ruby_large, 0, 20, 14);
+	if (global.cbmode) {
+		draw_sprite(spr_ruby_large_cb, 0, 20, 14);
+	} else {
+		draw_sprite(spr_ruby_large, 0, 20, 14);
+	}
 	
 	// Draw phasegear
 	if (phasegear) {

@@ -7,4 +7,4 @@ status = 0;
 name = "Material Regenerator";
 switchcasename = "material regenerator";
 description = "Cut phasegear recharge time by 25%"
-price = 65;
+price = 115;

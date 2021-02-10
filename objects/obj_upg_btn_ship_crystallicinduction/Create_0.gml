@@ -7,4 +7,4 @@ status = 0;
 name = "Crystallic Induction";
 switchcasename = "crystallic induction";
 description = "Gain energy when picking up crystals"
-price = 95;
+price = 195;

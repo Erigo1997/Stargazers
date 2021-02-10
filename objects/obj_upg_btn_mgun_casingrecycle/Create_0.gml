@@ -7,4 +7,4 @@ status = 0;
 name = "Casing Recycle";
 switchcasename = "casing recycle";
 description = "Firing energy cost -50%"
-price = 75;
+price = 175;
